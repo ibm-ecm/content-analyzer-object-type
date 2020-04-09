@@ -1,0 +1,46 @@
+{
+    "objectTypeList": [
+        {
+            "name": "Email Address",
+            "symbolicName": "EmailAddress",
+            "scope": "ABC",
+            "description": "This is an email address",
+            "extractor": {
+                "implementationList": [
+                    {
+                        "name": "Email Regular Expression",
+                        "symbolicName": "emailRegex",
+                        "description": "Pattern to define the value for cities",
+                        "namespace": "valueExtractor",
+                        "extractionTool": "regex",
+                        "pattern": "[a-zA-Z]+@[a-zA-Z]+.com"
+                    }
+                ]
+            },
+            "validator": {
+                "implementationList": [
+                	{
+                        "name": "Email Address Regex Validator",
+                        "symbolicName": "emailRegexValidator",
+                        "description": "Regex to validate the value for an email",
+                        "namespace": "validator",
+                        "extractionTool": "regex",
+                        "pattern": "[a-zA-Z]+@gmail.com"
+                    },
+                    {
+                        "name": "Email Address List",
+                        "symbolicName": "emailDict",
+                        "description": "Dictionary to validate the value for an email",
+                        "namespace": "validator",
+                        "extractionTool": "dict",
+                        "wordList": [
+                            "test@gmail.com",
+                            "build@gmail.com",
+                            "admin@gmail.com"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
