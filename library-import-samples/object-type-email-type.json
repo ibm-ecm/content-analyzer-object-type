@@ -3,7 +3,7 @@
         {
             "name": "Email Address",
             "symbolicName": "EmailAddress",
-            "scope": "ABC",
+            "scope": "sample",
             "description": "This is an email address",
             "extractor": {
                 "implementationList": [
