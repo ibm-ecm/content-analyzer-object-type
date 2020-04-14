@@ -31,7 +31,7 @@ The sample JSON file for importing the Object Type Library consists of a list of
 **scope** (String)
 - Mandatory
 - name of the ObjectTypeLibrary the current objectType belongs to
-- Ex: "scope": "ABC"
+- Ex: "scope": "sample"
 
 **description** (String)
 - Optional
